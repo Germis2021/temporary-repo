@@ -10,27 +10,24 @@ todo_list = []
 
 while True :
 
-    description = input("Ivesk uzduoties pavadinima ")
-    description_date = input("Ivesk uzduoties data (Year, month, day): ")
- 
+        description = input("Ivesk uzduoties pavadinima ")
+        description_date = input("Ivesk uzduoties data (Year, month, day): ")
+    
 
-    description = {
-        'description': description,
-        'description_date': description_date,
+        description = {
+            'description': description,
+            'description_date': description_date,
+            
+        }
+
+        todo_list.append(description)
         
-    }
+        
+        for p in todo_list:
 
-  
-
-    todo_list.append(description)
-    
-    
-
-    for p in todo_list:
-
-        print("uzduociu sarasas")
-         
-        print(f" description: {p['description']}, iki: description_date: {p['description_date']}")
+            print("uzduociu sarasas")
+            
+            print(f" description: {p['description']}, iki: description_date: {p['description_date']}")
 
         
 
